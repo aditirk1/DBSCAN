@@ -13,10 +13,10 @@ The project aimed to perform metabolomic characterisation and analysis of Gliobl
 High dimensional metabolic data was preprocessed, and clustered using the DBSCAN algorithm to describe metabolic abnormalities. Through principal component analysis (PCA) and differential expression analysis, we aimed to uncover subtypes and compare the data obtained from 99 GBM patients.
 
 Cancer cells often exhibit altered metabolic pathways to support rapid growth and proliferation. The analysis was performed on various attributes:
-. comparison of lactic acid, pyruvate, glucose levels
-. comparison of homocysteine and creatinine levels 
-. comparison of galactitol and glucose levels 
-. clustering based on age and BMI
+- comparison of lactic acid, pyruvate, glucose levels
+- comparison of homocysteine and creatinine levels 
+- comparison of galactitol and glucose levels 
+- clustering based on age and BMI
  
 
 The project utilized Python libraries such as pandas, NumPy, and matplotlib to preprocess and visualize metabolomic data. The knee point concept was used to determine the optimal value of the epsilon parameter. 
