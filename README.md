@@ -103,7 +103,10 @@ Visualized clustering outcomes using matplotlib and seaborn to create scatter pl
 We compared levels of key metabolites such as lactic acid, pyruvate, glucose, homocysteine, creatinine, and galactitol, uncovering significant differences that highlight the unique metabolic reprogramming in Glioblastoma. Additionally, clustering based on demographic factors like age and BMI provided further context, revealing how these variables might influence or correlate with metabolic changes in the tumor environment. 
 
 # FUTURE ENHANCEMENT
-The goal of future developments for DBSCAN is to increase its usability, performance, and flexibility in a variety of contexts. One of the main areas of improvement is the development of algorithms for automated and dynamic parameter estimation, which optimizes parameter selection and allows for better handling of datasets with different densities. Enhancing parallel processing methods for multi-core and GPU-based systems and integrating DBSCAN into distributed computing frameworks such as Apache Spark are two ways to boost scalability.The future of DBSCAN involves making it more user-friendly, faster, and versatile across different applications. Automated parameter estimation and improved noise handling, will enhance our ability to analyze and interpret complex biological data.
+The future of DBSCAN involves making it more user-friendly, faster, and versatile across different applications. Automated parameter estimation and improved noise handling, will enhance our ability to analyze and interpret complex biological data. 
+
+Enhancing parallel processing methods for multi-core and GPU-based systems and integrating DBSCAN into distributed computing frameworks such as Apache Spark are two ways to boost scalability. Another area of research is handling high-dimensional data, with initiatives underway to combine dimensionality reduction methods like PCA, t-SNE, or UMAP to create high-dimensional adaptations to lessen the impact of dimensionality. The goal of improving noise and outlier management is to include multi-level noise handling and strengthen the algorithm's capacity to discern between relevant outliers and actual noise. Getting more resilient.
+
 
 
 
