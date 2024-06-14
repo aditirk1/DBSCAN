@@ -7,7 +7,7 @@ Proteogenomic and metabolomic characterization of human glioblastoma. Whole geno
 As seen in "Proteogenomic and metabolomic characterization of human glioblastoma. Cancer cell" by Wang LB, Karpova A, Gritsenko MA, et al. (doi:https://doi.org/10.1016/j.ccell.2021.01.006),
 Metabolite identifications and data processing were conducted as previously detailed (Webb-Robertson et al., 2014). GC-MS raw data files were processed using Metabolite Detector software v2.0.6 beta (Hiller et al., 2009). Retention indices (RI) of detected metabolites were calculated based on the analysis of the FAMEs mixture, followed by their chromatographic alignment across all analyses after deconvolution. Metabolites were identified by matching experimental spectra to an augmented version of the Agilent Fiehn Metabolomics Retention Time Locked (RTL) Library (Kind et al., 2009), containing spectra and validated retention indices. All metabolite identifications were manually validated. The NIST 08 GC-MS library was also used to cross validate the spectral matching scores obtained using the Agilent library and to provide identifications for metabolites that were initially unidentified. The three most abundant fragment ions in the spectra of each identified metabolite were automatically determined by Metabolite Detector, and their summed abundances were integrated across the GC elution profile. A matrix of identified metabolites, unidentified metabolite features, and their corresponding abundances for each sample in the batch were exported for statistics. 
 
-# Executive Summary
+# EXECUTIVE SUMMARY
 The project aimed to perform metabolomic characterisation and analysis of Glioblastoma. Glioblastoma is a highly aggressive brain tumor with complex metabolic dysregulation, making it crucial to understand the underlying metabolomic patterns to gain prospective therapeutic insights. 
 
 High dimensional metabolic data was preprocessed, and clustered using the DBSCAN algorithm to describe metabolic abnormalities. Through principal component analysis (PCA) and differential expression analysis, we aimed to uncover subtypes and compare the data obtained from 99 GBM patients.
@@ -24,5 +24,11 @@ The project utilized Python libraries such as pandas, NumPy, and matplotlib to p
 Visualizations such as heatmaps and pathway maps elucidated disrupted metabolic pathways in GBM, providing critical insights into potential targets and biomarkers. This project highlights Python as a powerful tool for bioinformatics and metabolomics research, enabling comprehensive exploration and comparison of metabolite expression patterns in Glioblastoma.
 
 
-# Introduction
+# INTRODUCTION
 Density-Based Spatial Clustering of Applications with Noise (DBSCAN) is a base algorithm for density-based clustering. It is a popular unsupervised learning method used for model construction and machine learning algorithms. It is a clustering method utilized for separating high-density clusters from low-density clusters with data containing outliers and noise. It is very useful in defining arbitrarily shaped clusters. It classifies points as core, border, or noise based on two parameters: Eps (the radius defining a point's neighborhood) MinPts (the minimum number of points required within this radius for a point to be considered a core point)
+
+
+# OBJECTIVE
+-Implement DBSCAN with optimized parameters using the knee point method for clustering
+-Analyze GBM metabolomic profiles and identify subclasses based on the patterns visualized. 
+
