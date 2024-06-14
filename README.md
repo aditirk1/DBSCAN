@@ -35,6 +35,8 @@ Density-Based Spatial Clustering of Applications with Noise (DBSCAN) is a base a
 # DETAILED DESIGN ARCHITECTURE
 ## Proposed System Architecture
 The proposed system architecture is designed to detect unique metabolic subgroups in Glioblastoma Multiforme (GBM) patients (treatment-naive) by grouping metabolite abundance profiles using the DBSCAN algorithm. The system is intended to take high-dimensional metabolomic data, preprocess it, and perform clustering to identify underlying metabolic abnormalities and possible subgroups in GBM. The system architecture's main components include data collection, preprocessing, clustering algorithm application, visualization and analysis.
+![Screenshot 2024-06-14 225247](https://github.com/aditirk1/DBSCAN/assets/132145522/f62f8f91-255a-471b-9b48-bae51725e8d9)
+
 
 ## Design Architecture
 
@@ -44,24 +46,31 @@ The Data Input Module encapsulates functionality to handle input data files, ens
 ## Methodology
 
 1. __Data Acquisition and Preprocessing__
+
 The first step was to load the metabolomic data from a CSV file using pandas for efficient data handling and manipulation. Data integrity and completeness must be maintained by handling missing values through mean imputation. Finally, the dataset was transposed to align metabolite features as columns and patient samples as rows, optimizing the data structure for subsequent analysis.
 
 2. __Merging necessary files__
+
 Clinical patient data consisting of various categorical and numeric data (which were the features used in the analysis) was merged with metabolome abundance data based on the column “Patient_ID”. This ensured that both data were retained, with missing data being depicted as “NaN”. This step was performed for other analysis apart from the PCA derived data.
 
 3. __Exploratory Data Analysis (EDA)__
+
 Following the loading of required data, descriptive statistics using pandas to summarize the distribution of metabolite abundances across samples, including metrics such as mean, standard deviation, and quartiles, was performed. Utilized seaborn and matplotlib for generating correlation matrices and visualizing interrelationships among metabolites using heatmaps and scatter plots. These visualizations can determine potential metabolic patterns and outliers.
 
 4. __Data Normalization and Scaling__
+   
 Normalization of metabolite abundances using MinMaxScaler from scikit-learn was performed to standardize data across a uniform range, preparing it for downstream analysis. This step ensures that all features contribute equally to algorithms and prevents biases due to varying scales.
 
 5. __Dimensionality Reduction__
+    
 Implementation of Principal Component Analysis (PCA) from scikit-learn was done to reduce the dimensionality of the dataset while retaining essential variance. For the rest of the analysis, PCA was not performed as there were two dimensions only, when comparing two features in the data. Project the data into a lower-dimensional space using PCA, facilitating efficient visualization and clustering. This simplifies the interpretation of complex metabolomic profiles.
 
 6. __Clustering Analysis__
+    
 Utilized the Density-Based Spatial Clustering of Applications with Noise (DBSCAN) algorithm from scikit-learn for clustering analysis. Optimized parameters such as epsilon and minimum samples using techniques like KneeLocator for enhanced clustering accuracy. Distinct metabolic subgroups within the data based on clustering results were identified, distinguishing noise from cluster points for comprehensive analysis.
 
 7. __Visualization and Interpretation__
+    
 Visualized clustering outcomes using matplotlib and seaborn to create scatter plots and color-coded clusters. This visualization approach helps in effectively interpreting metabolic subgroups and highlighting important differences between clusters. 
 
 
