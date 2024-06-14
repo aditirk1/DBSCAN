@@ -32,3 +32,14 @@ Density-Based Spatial Clustering of Applications with Noise (DBSCAN) is a base a
 -Implement DBSCAN with optimized parameters using the knee point method for clustering
 -Analyze GBM metabolomic profiles and identify subclasses based on the patterns visualized. 
 
+
+
+
+
+
+# RESULTS
+GBM cells, like most cancer cells, exhibit the Warburg effect, where they produce energy through glycolysis followed by lactic acid fermentation even in the presence of Oxygen. This allows us to distinguish between cancer patients and healthy people, by analyzing their metabolic profiles. 
+The chosen attributes are crucial in energy producing metabolic pathways. Comparison of lactic acid, pyruvate levels between the patients gives an understanding about shift towards glycolysis. 
+Homocysteine is an intermediate in the methionine metabolism and is associated with oxidative stress. Creatinine level perturbations can give an insight into the overall metabolic health. Galactitol accumulation can be indicative of a dysregulation of galactose metabolism.
+Age can affect the progression of GBM. Clustering based on age can help in identification of age- specific metabolic patterns.
+
