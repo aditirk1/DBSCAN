@@ -88,11 +88,21 @@ Utilized the Density-Based Spatial Clustering of Applications with Noise (DBSCAN
     
 Visualized clustering outcomes using matplotlib and seaborn to create scatter plots and color-coded clusters. This visualization approach helps in effectively interpreting metabolic subgroups and highlighting important differences between clusters. 
 
+# FUNCTIONS AND TOOLS
+- Numpy: A fundamental package for scientific computing with Python. It provides support for arrays, matrices, and many mathematical functions.
+- Pandas: A data manipulation and analysis library offering data structures like DataFrame.
+- DBSCAN: A clustering algorithm that groups points closely packed together while marking outliers as noise.
+- StandardScaler: Standardizes features by removing the mean and scaling to unit variance.
+- PCA (Principal Component Analysis): A dimensionality reduction technique that reduces the number of variables in a dataset, retaining maximum information possible.
+- Matplotlib: A library intended to create interactive visualizations by creating plots and graphs. 
+- NearestNeighbors: It is a sci-kit module that performs unsupervised nearest neighbour learning. 
+- Knee method: A technique to find the optimal value of the epsilon parameter. 
+
 
 # RESULTS
 We compared levels of key metabolites such as lactic acid, pyruvate, glucose, homocysteine, creatinine, and galactitol, uncovering significant differences that highlight the unique metabolic reprogramming in Glioblastoma. Additionally, clustering based on demographic factors like age and BMI provided further context, revealing how these variables might influence or correlate with metabolic changes in the tumor environment. 
 
-#future enhancement
+# FUTURE ENHANCEMENT
 The goal of future developments for DBSCAN is to increase its usability, performance, and flexibility in a variety of contexts. One of the main areas of improvement is the development of algorithms for automated and dynamic parameter estimation, which optimizes parameter selection and allows for better handling of datasets with different densities. Enhancing parallel processing methods for multi-core and GPU-based systems and integrating DBSCAN into distributed computing frameworks such as Apache Spark are two ways to boost scalability.The future of DBSCAN involves making it more user-friendly, faster, and versatile across different applications. Automated parameter estimation and improved noise handling, will enhance our ability to analyze and interpret complex biological data.
 
 
