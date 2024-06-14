@@ -25,12 +25,21 @@ Visualizations such as heatmaps and pathway maps elucidated disrupted metabolic 
 
 
 # INTRODUCTION
-Density-Based Spatial Clustering of Applications with Noise (DBSCAN) is a base algorithm for density-based clustering. It is a popular unsupervised learning method used for model construction and machine learning algorithms. It is a clustering method utilized for separating high-density clusters from low-density clusters with data containing outliers and noise. It is very useful in defining arbitrarily shaped clusters. It classifies points as core, border, or noise based on two parameters: Eps (the radius defining a point's neighborhood) MinPts (the minimum number of points required within this radius for a point to be considered a core point)
+Density-Based Spatial Clustering of Applications with Noise (DBSCAN) is a base algorithm for density-based clustering. It is a popular unsupervised learning method used for model construction and machine learning algorithms. It is a clustering method utilized for separating high-density clusters from low-density clusters with data containing outliers and noise. It is very useful in defining arbitrarily shaped clusters. It classifies points as core, border, or noise based on two parameters: Eps (the radius defining a point's neighborhood) MinPts (the minimum number of points required within this radius for a point to be considered a core point)DBSCAN is a very powerful and versatile clustering technique and has a wide range of applications including image processing, geospatial data analysis ,data mining , astronomy and anomaly detection.
+
 
 
 # OBJECTIVE
 -Implement DBSCAN with optimized parameters using the knee point method for clustering
 -Analyze GBM metabolomic profiles and identify subclasses based on the patterns visualized. 
+-Implement DBSCAN with optimized parameters using the knee point method for clustering
+-Analyze GBM metabolomic profiles and identify subclasses based on the patterns visualized. 
+-The analysis was performed on various attributes:
+. comparison of lactic acid, pyruvate, glucose levels
+. comparison of homocysteine and creatinine levels 
+. comparison of galactitol and glucose levels 
+. clustering based on age and BMI
+
 
 # DETAILED DESIGN ARCHITECTURE
 ## Proposed System Architecture
@@ -79,4 +88,8 @@ GBM cells, like most cancer cells, exhibit the Warburg effect, where they produc
 The chosen attributes are crucial in energy producing metabolic pathways. Comparison of lactic acid, pyruvate levels between the patients gives an understanding about shift towards glycolysis. 
 Homocysteine is an intermediate in the methionine metabolism and is associated with oxidative stress. Creatinine level perturbations can give an insight into the overall metabolic health. Galactitol accumulation can be indicative of a dysregulation of galactose metabolism.
 Age can affect the progression of GBM. Clustering based on age can help in identification of age- specific metabolic patterns.
+#future enhancement
+The goal of future developments for DBSCAN is to increase its usability, performance, and flexibility in a variety of contexts. One of the main areas of improvement is the development of algorithms for automated and dynamic parameter estimation, which optimizes parameter selection and allows for better handling of datasets with different densities. Enhancing parallel processing methods for multi-core and GPU-based systems and integrating DBSCAN into distributed computing frameworks such as Apache Spark are two ways to boost scalability.The future of DBSCAN involves making it more user-friendly, faster, and versatile across different applications. Automated parameter estimation and improved noise handling, will enhance our ability to analyze and interpret complex biological data.
+
+
 
