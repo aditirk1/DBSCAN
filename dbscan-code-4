@@ -4,9 +4,9 @@ y = data['D-glucose']
 # Scatter plot to see if there is any clustering
 plt.figure(figsize=(8, 6))
 plt.scatter(x, y, s=50, c='green', alpha=0.7, edgecolors='k')
-plt.title('Scatter Plot of Column1 vs Column2')
-plt.xlabel('Column1')
-plt.ylabel('Column2')
+plt.title('galactitol vs glucose')
+plt.xlabel('galactitol')
+plt.ylabel('glucose')
 plt.grid(True)
 plt.show()
 
